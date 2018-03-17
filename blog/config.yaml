@@ -28,6 +28,9 @@ permalinks:
   post: /blog/:year/:month/:day/:title/
 
 params:
+  # Set the subtitle
+  subtitle: "A blog about coding, computers and a little music too"
+
   # Set my little round logo photo
   logo: img/fotis.jpg
 
