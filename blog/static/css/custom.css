@@ -3,7 +3,6 @@
 /* Main post body */
 body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.5;
   color: #999;
   background: #001a36;
 }
@@ -13,16 +12,12 @@ p {
   margin: 20px 0;
 }
 
-li p {
-  margin-top: 0;
-}
-
 /* Links in posts */
 p a {
   color: #117711;
 }
 
-/* Heading weight and spacing */
+/* Heading weight */
 h1,
 h2,
 h3,
@@ -30,7 +25,6 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  margin-bottom: 20px;
 }
 
 /* Make main headings brighter */
@@ -117,7 +111,8 @@ pre::-webkit-scrollbar-thumb:horizontal,
 
 /* Spacing if code block line numbers are enabled */
 .highlighttable {
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -154,8 +149,7 @@ pre::-webkit-scrollbar-thumb:horizontal,
 /* Navbar link items and heading */
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
-  font-weight: normal;
-  color: #ccc;
+  color: #aaa;
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -167,8 +161,8 @@ pre::-webkit-scrollbar-thumb:horizontal,
 
 /* Align the left and right padding of the navbar */
 .navbar-custom .container-fluid {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 /* Make the avatar image a little bigger */
@@ -257,11 +251,15 @@ header.header-section .page-heading h1 {
   font-size: 64px;
 }
 
-/* Set the font size for the title on pages to be the same as posts */
-@media only screen and (min-width: 768px) {
-  header.header-page .page-heading h1 {
-    font-size: 50px;
-  }
+/* Due to the extra margin on paragraphs, remove extra space above text in posts */
+.intro-header {
+  margin-bottom: 0px;
+}
+
+/* Add a little extra space between list items for clarity */
+.blog-post li {
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 /* --- Pager --- */
